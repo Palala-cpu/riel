@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 78%;
+}
+
+.image {
+  display: block;
+  width: 130%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="pok.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text"><h2>ADVANCE IN TECHNOLOGY</h2><p>Technologies are continuously evolving, with new innovations emerging that promise to reshape out world in the coming decades.</p></div>
+  </div>
+</div>
+<button type="button"><a href="main.html" class="btn">RETURN TO THE MAIN PAGE</a></button>
+
+</body>
+</html>
